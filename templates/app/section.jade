@@ -1,0 +1,14 @@
+if heading != undefined
+  .container.full-width.no-padding.section-end
+    .section-end-back.filler
+  .container.full-width.filler
+    .container
+      .row
+        .col-md-12.no-padding
+          .item.h1
+            h1!= heading
+if showItems == true
+  .container.full-width.items-container
+    .row
+      .container
+        #items

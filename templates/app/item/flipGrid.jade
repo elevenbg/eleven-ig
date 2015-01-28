@@ -1,0 +1,7 @@
+include title
+ul.row
+  each item, i in items
+    li.col-md-3.col-xs-4.col-sm-4.flipbox-container
+      .flipbox(
+        data-item-id=i
+      )!= item.front

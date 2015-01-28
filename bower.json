@@ -1,0 +1,19 @@
+{
+  "name": "np-charting",
+  "dependencies": {
+    "backbone-documentmodel": "0.6.0",
+    "bootstrap": "3.0.0",
+    "d3": "3.3.8",
+    "jade": "0.35.0",
+    "jquery-waypoints": "2.0.3",
+    "requirejs": "2.1.9",
+    "marionette": "1.1.0",
+    "lodash": "~2.3.0",
+    "requirejs-text": "2.0.10",
+    "topojson": "~1.4.5",
+    "queue-async": "~1.0.4",
+    "flippy": "*",
+    "Snap.svg": "~0.2.0"
+  },
+  "devDependencies": {}
+}

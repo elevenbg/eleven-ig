@@ -1,0 +1,201 @@
+@color0: #ffffff;
+@color1: #F22496;
+@color2: #30D979;
+@color3: #FF9400;
+@color4: #9D49F2;
+@color9: #555555;
+
+@iconWH: 64px;
+
+body{
+  color: @color9;
+}
+
+.filler{
+  background-image: url(../assets/pattern-white.png);
+  background-repeat: repeat;
+}
+
+.section{
+
+  .normal-back{
+    background: @color9;
+    fill: @color9;
+  }
+
+  .normal-color{
+    color: @color9;
+  }
+
+  &.primary{
+    background: @color1;
+
+    .filler{
+      background-color: @color1;
+    }
+
+    .section-end{
+      .gradient(@color0, @color1);
+    }
+
+    .section-color{
+      color: @color1;
+      fill: @color1;
+    }
+
+    .title{
+
+      h3{
+        border: @color1 2px solid;
+        color: @color1;
+
+        .left{
+          border: @color1 2px solid;
+        }
+      }
+    }
+
+    .item{
+      &.figure{
+        .figure-prefix, .figure-affix{
+          color: @color1;
+        }
+      }
+    }
+  }
+
+  &.secondary{
+    background: @color2;
+
+    .filler, .section-back{
+      background-color: @color2;
+      fill: @color2;
+    }
+
+    .section-stroke{
+      stroke: @color2;
+    }
+
+    .section-end{
+      .gradient(@color0, @color2);
+    }
+
+    .section-color{
+      color: @color2;
+      fill: @color2;
+    }
+
+    .title{
+      h3{
+        border: @color2 2px solid;
+        color: @color2;
+
+        .left{
+          border: @color2 2px solid;
+        }
+      }
+    }
+
+    .item{
+      &.figure{
+        .figure-prefix, .figure-affix{
+          color: @color2;
+        }
+      }
+    }
+  }
+
+  &.tertiary{
+    background: @color3;
+    
+    .filler, .section-back{
+      background-color: @color3;
+      fill: @color3;
+    }
+
+    .section-stroke, .svg svg{
+      // stroke: @color3 !important;
+      font-family: 'Opens Sans', sans-serif !important;
+    }
+
+    .section-end{
+      .gradient(@color0, @color3);
+    }
+
+    .title{
+      h3{
+        border: @color3 2px solid;
+        color: @color3;
+
+        .left{
+          border: @color3 2px solid;
+        }
+      }
+    }
+
+    .item{
+      &.list{
+        li{
+          color: @color3;
+        }
+      }
+    }
+  }
+
+  &.quaternary{
+    background: @color4;
+
+    .filler, .section-back{
+      background-color: @color4;
+      fill: @color4;
+    }
+
+    .section-stroke{
+      stroke: @color4;
+    }
+
+    .section-end{
+      .gradient(@color0, @color4);
+    }
+
+    .title{
+      h3{
+        border: @color4 2px solid;
+        color: @color4;
+
+        .left{
+          border: @color4 2px solid;
+        }
+      }
+    }
+  }
+
+
+  .items-container{
+    background: @color0;
+  }
+
+  .item{
+
+    .title{
+      color: @color0;
+    }
+
+    &.h1{
+      color: @color0;
+    }
+  }
+}
+
+.credit{
+  color: @color0;
+  background: @color4;
+
+  a{
+    color: @color0;
+    &:hover{
+      color: @color0;
+      text-decoration: underline;
+    }
+  }
+}
