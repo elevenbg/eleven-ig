@@ -8,7 +8,7 @@ require.config({
     'd3.topojson': 'lib/topojson/topojson'
     flippy: 'lib/flippy/jquery.flippy'
     jade: 'lib/jade/runtime'
-    jquery: 'lib/jquery/jquery'
+    jquery: 'lib/jquery/dist/jquery'
     waypoints: 'lib/jquery-waypoints/waypoints'
     lodash: 'lib/lodash/dist/lodash'
     marionette: 'lib/marionette/lib/backbone.marionette'

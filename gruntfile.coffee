@@ -103,25 +103,41 @@ module.exports = (grunt) ->
         }
       }
     }
-    s3: {
-      options: {
-        key: aws.key
-        secret: aws.secret
-        access: 'public-read'
-      }
-      prod: {
-        options: {
-          region: 'eu-west-1'
-          bucket: 'infographic.eleven.bg'
-          gzip: true
+    'ftp-deploy': {
+      build: {
+        auth: {
+          host: 'ftp.eleven.bg'
+          port: 21
+          authKey: 'key1'
         }
-        upload: [{
-          src: 'www/**'
-          dest: ''
-          rel: 'www'
-        }]
+        src: 'www'
+        dest: '/infographic'
+        # exclusions: [
+        #   'path/to/source/folder/**/.DS_Store'
+        #   'path/to/source/folder/**/Thumbs.db'
+        #   'path/to/dist/tmp'
+        # ]
       }
     }
+    # s3: {
+    #   options: {
+    #     key: aws.key
+    #     secret: aws.secret
+    #     access: 'public-read'
+    #   }
+    #   prod: {
+    #     options: {
+    #       region: 'eu-west-1'
+    #       bucket: 'infographic.eleven.bg'
+    #       gzip: true
+    #     }
+    #     upload: [{
+    #       src: 'www/**'
+    #       dest: ''
+    #       rel: 'www'
+    #     }]
+    #   }
+    # }
     less: {
       dev: {
         options: {compress:false}
@@ -207,8 +223,8 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-newer')
   grunt.loadNpmTasks('grunt-notify')
-  grunt.loadNpmTasks('grunt-s3')
-
+  # grunt.loadNpmTasks('grunt-s3')
+  grunt.loadNpmTasks('grunt-ftp-deploy')
 
   # Helpers
 
@@ -261,7 +277,8 @@ module.exports = (grunt) ->
     'jade:www'
     'requirejs'
     'less:prod'
-    's3:prod'
+    # 's3:prod'
+    'ftp-deploy'
   ])
   grunt.registerTask('dev', [
     'build'
