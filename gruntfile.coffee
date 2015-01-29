@@ -1,9 +1,3 @@
-# Requires
-
-aws = require('./aws')
-# platform = require('np-platform')
-
-
 # Exports
 
 module.exports = (grunt) ->
@@ -52,7 +46,7 @@ module.exports = (grunt) ->
           base: 'www'
           # keepalive: true
           hostname: '127.0.0.1'
-          port: '3005'
+          port: 1337
           livereload: 1338
         }
       }
@@ -157,37 +151,87 @@ module.exports = (grunt) ->
     #     dest: 'dist/platform.js'
     #   }
     # }
-    symlink: {
+    # symlink: {
+    #   bootstrapFonts: {
+    #     expand: true
+    #     cwd: 'dist/lib/bootstrap/dist/fonts/'
+    #     src: '**'
+    #     dest: 'www/fonts/'
+    #     filter: 'isFile'
+    #   }
+    #   general: {
+    #     files: {
+    #       # 'app/platform': '../platform/app'
+    #       # 'styles/platform': '../platform/styles'
+    #       # 'templates/app/platform': '../platform/templates'
+    #       'www/assets': 'assets'
+    #       'styles/lib/bootstrap': 'dist/lib/bootstrap/less'
+    #       'dist/require.js': 'dist/lib/requirejs/require.js'
+    #       'dist/text.js': 'dist/lib/requirejs-text/text.js'
+    #     }
+    #   }
+    #   dev: {
+    #     files: {
+    #       'www/js': 'dist'
+    #       # 'dist/app/platform.json': '../platform/dev.json'
+    #     }
+    #   }
+    #   prod: {
+    #     files: {
+    #       'www/js/require.js': 'dist/lib/requirejs/require.js'
+    #       'www/js/text.js': 'dist/lib/requirejs-text/text.js'
+    #       # 'dist/app/platform.json': '../platform/prod.json'
+    #     }
+    #   }
+    # }
+    copy: {
       bootstrapFonts: {
         expand: true
         cwd: 'dist/lib/bootstrap/dist/fonts/'
         src: '**'
         dest: 'www/fonts/'
-        filter: 'isFile'
       }
-      general: {
-        files: {
-          # 'app/platform': '../platform/app'
-          # 'styles/platform': '../platform/styles'
-          # 'templates/app/platform': '../platform/templates'
-          'www/assets': 'assets'
-          'styles/lib/bootstrap': 'dist/lib/bootstrap/less'
-          'dist/require.js': 'dist/lib/requirejs/require.js'
-          'dist/text.js': 'dist/lib/requirejs-text/text.js'
-        }
+      assets: {
+        expand: true
+        cwd: 'assets'
+        src: '**'
+        dest: 'www/assets'
+      }
+      bootstrap: {
+        expand: true
+        cwd: 'dist/lib/bootstrap/less/'
+        src: '**'
+        dest: 'styles/lib/bootstrap/'
+      }
+      require: {
+        expand: true
+        cwd: 'dist/lib/requirejs/'
+        src: 'require.js'
+        dest: 'dist'
+      }
+      requireText: {
+        expand: true
+        cwd: 'dist/lib/requirejs-text/'
+        src: 'text.js'
+        dest: 'dist'
       }
       dev: {
-        files: {
-          'www/js': 'dist'
-          # 'dist/app/platform.json': '../platform/dev.json'
-        }
+        expand: true
+        cwd: 'dist/'
+        src: '**'
+        dest: 'www/js/'
       }
-      prod: {
-        files: {
-          'www/js/require.js': 'dist/lib/requirejs/require.js'
-          'www/js/text.js': 'dist/lib/requirejs-text/text.js'
-          # 'dist/app/platform.json': '../platform/prod.json'
-        }
+      prodRequire: {
+        expand: true
+        cwd: 'dist/lib/requirejs/'
+        src: 'require.js'
+        dest: 'www/js'
+      }
+      prodRequireText: {
+        expand: true
+        cwd: 'dist/lib/requirejs-text/'
+        src: 'text.js'
+        dest: 'www/js'
       }
     }
     watch: {
@@ -215,6 +259,7 @@ module.exports = (grunt) ->
 
   grunt.loadNpmTasks('grunt-contrib-clean')
   grunt.loadNpmTasks('grunt-contrib-coffee')
+  grunt.loadNpmTasks('grunt-contrib-copy')
   grunt.loadNpmTasks('grunt-contrib-connect')
   grunt.loadNpmTasks('grunt-contrib-jade')
   grunt.loadNpmTasks('grunt-contrib-less')
@@ -266,28 +311,29 @@ module.exports = (grunt) ->
   # Tasks
 
   grunt.registerTask('build', ['clean:all', 'coffee'])
-
+  grunt.registerTask('copyGeneral', ['copy:bootstrapFonts', 'copy:assets', 'copy:bootstrap', 'copy:require', 'copy:requireText'])
+  grunt.registerTask('copyProd', ['copy:prodRequire', 'copy:prodRequireText'])
   grunt.registerTask('publish', [
     'clean:all'
     'coffee'
-    'symlink:bootstrapFonts'
-    'symlink:general'
-    'symlink:prod'
+    # 'symlink:bootstrapFonts'
+    'copyGeneral'
     'jade:appProd'
     'jade:www'
     'requirejs'
     'less:prod'
+    'copyProd'
     # 's3:prod'
     'ftp-deploy'
   ])
   grunt.registerTask('dev', [
     'build'
     'coffee'
-    'symlink:bootstrapFonts'
-    'symlink:general'
-    'symlink:dev'
+    # 'symlink:bootstrapFonts'
+    'copyGeneral'
     'jade:appDev'
     'jade:www'
     'less:dev'
+    'copy:dev'
   ])
   grunt.registerTask('default', ['dev', 'connect', 'watch'])
