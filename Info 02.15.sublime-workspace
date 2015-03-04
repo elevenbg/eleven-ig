@@ -1,0 +1,330 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"investment",
+				"investment"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"boo",
+				"bootstrap"
+			],
+			[
+				"as",
+				"assets"
+			],
+			[
+				"boot",
+				"bootstrapFonts"
+			],
+			[
+				"pr",
+				"prodRequireText"
+			],
+			[
+				"pro",
+				"prodRequire"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/data/ig.coffee",
+			"settings":
+			{
+				"buffer_size": 45624,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Teodora/Desktop/_teams.svg",
+			"settings":
+			{
+				"buffer_size": 52949,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Teodora/Desktop/teams.svg",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/Info 3/INFOGRAPHIC 2015/assets/teams.svg",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/Info 3/INFOGRAPHIC 2015/www/assets/teams.svg",
+		"/C/Users/Teodora/Desktop/_teams.svg",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/app/data/ig.coffee",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/setup.sh",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/node_modules/grunt-contrib-symlink/docs/symlink-examples.md",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/app/views/section.coffee",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/dist/lib/jquery/src/selector.js",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/node_modules/grunt-contrib-less/node_modules/less/test/css/selectors.css",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/app/models/infographic.coffee",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/app/views/item/chart/bubble.coffee",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/dist/app/data/ig.js",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/app/data/ig_new.coffee",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/app/data/ig.coffee_new",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/INFOGRAPHIC 2015/app/data/ig.coffee.txt",
+		"/C/Users/Teodora/Documents/Eleven/Infographics/ig.coffee_batch6.txt",
+		"/C/Users/Teodora/Documents/Eleven/INFOGRAPHIC 2015/.gitignore",
+		"/C/Users/Teodora/Documents/Eleven/INFOGRAPHIC 2015/gruntfile.coffee",
+		"/C/Users/Teodora/Documents/Eleven/INFOGRAPHIC 2015/aws.json",
+		"/C/Users/Teodora/Documents/Eleven/INFOGRAPHIC 2015/beforeEdit.sh",
+		"/C/Users/Teodora/Desktop/jquery.nav.js",
+		"/C/Users/Teodora/Desktop/ig.coffee.txt",
+		"/C/Users/Teodora/Desktop/ig.coffee_batch6.txt",
+		"/C/Users/Teodora/Desktop/eleven-infographic-dec13/app/data/ig.coffee",
+		"/C/Users/Teodora/Desktop/eleven-infographic-dec13/.gitignore",
+		"/C/Users/Teodora/Desktop/eleven-infographic-dec13/app/views/item/default.coffee",
+		"/C/Users/Teodora/Desktop/eleven-infographic-dec13/package.json",
+		"/C/Users/Teodora/Desktop/eleven-infographic-dec13/gruntfile.coffee",
+		"/C/Users/Teodora/Desktop/eleven-infographic-dec13/styles/lib/bootstrap",
+		"/C/Users/Teodora/Desktop/eleven-infographic-dec13/aws.json",
+		"/C/Users/Teodora/Desktop/eleven-infographic-dec13/bower.json",
+		"/C/Users/Teodora/Desktop/eleven-infographic-dec13/styles/main.less",
+		"/C/Users/Teodora/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Teodora/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\Teodora\\Documents\\Eleven\\Infographics\\INFOGRAPHIC 2015",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"}\n",
+			"bio",
+			"bioterry",
+			"leap",
+			"egypt",
+			"banglade",
+			"australia",
+			"algeria",
+			"south africa",
+			"poland",
+			"iran",
+			"finland",
+			"fin",
+			"swi",
+			"swe",
+			"E-commerce",
+			"class=\"section-back\"",
+			"Lifestyle",
+			"# front:",
+			"teams",
+			"'symlink:prod'",
+			"'symlink:general'",
+			"thumbnal",
+			"singapore",
+			"poland",
+			"iran",
+			"australia",
+			"sweden",
+			"swed",
+			"fran"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" front:"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/data/ig.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45624,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44134,
+								44134
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 11039.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Teodora/Desktop/_teams.svg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 52949,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Info 02.15.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 253.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

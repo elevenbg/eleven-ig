@@ -240,7 +240,7 @@ module.exports = (grunt) ->
       }
       coffee: {
         files: '**/**/*.coffee'
-        tasks: ['newer:coffee']
+        tasks: ['newer:coffee', 'copy:dev']
       }
       jade: {
         files: 'templates/**/*.jade'
